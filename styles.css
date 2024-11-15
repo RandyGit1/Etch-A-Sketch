@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 .row {
@@ -9,14 +8,26 @@
 }
 
 .square {
-    width: 50px;
-    height: 50px;
+    box-sizing: border-box;
     border: 1px solid black;
+}
+
+.square:hover {
+    background-color: black;
+}
+
+.grid-button {
+    background-color: rgb(72, 95, 226);
+    color: white;
+    border-radius: 5px;
+    padding: 2px 5px;
 }
 
 .container{
     height: 100vh;
     display: flex;
+    gap: 2px;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -25,4 +36,6 @@
     border: 1px solid black;
     display: flex;
     flex-direction: column;
+    width: 900px;
+    height: 900px;
 }
