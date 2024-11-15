@@ -3,20 +3,24 @@
     padding: 0;
 }
 
+h1 {
+    text-align: center;
+}
+
 .row {
     display: flex;
 }
 
+.tooltip{
+    font-size: 20px;
+    font-weight: normal;
+}
+
 .square {
     box-sizing: border-box;
-    border: 1px solid black;
 }
 
-.square:hover {
-    background-color: black;
-}
-
-.grid-button {
+.grid-button, .color-mode {
     background-color: rgb(72, 95, 226);
     color: white;
     border-radius: 5px;
